@@ -1,0 +1,85 @@
+.clock {
+  background: url("ios_clock.svg");
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  height: 50%;
+  width: 50%;
+  padding: 25px;
+  border: 15px solid black;
+  -webkit-box-shadow: 15px 15px 20px -7px rgba(0, 0, 0, 0.75);
+}
+.clock-container {
+  width: 50%;
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-25%, -25%);
+  transform: rotate(90deg);
+  animation: rotar 60s infinite linear;
+}
+.min {
+  height: 6px;
+  animation: rotar 3600s infinite linear;
+}
+.hour {
+  height: 8px;
+  animation: rotar 43200s infinite linear;
+}
+.seconds {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: black;
+  height: 100%;
+  width: 30%;
+  margin-top: -4px;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+}
+.minutes {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: black;
+  height: 100%;
+  width: 22%;
+  margin-top: -4px;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+}
+.hours {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: black;
+  height: 100%;
+  width: 15%;
+  margin-top: -4px;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+}
+.clock::after {
+  content: "";
+  border-radius: 50%;
+  background: red;
+  opacity: 1;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 51%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@keyframes rotar {
+  0% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+}
