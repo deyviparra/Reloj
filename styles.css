@@ -1,16 +1,27 @@
+body{
+  background: url("fondo.jpg");
+  background-size: cover;
+}
 .clock {
+  box-sizing: border-box;
   background: url("ios_clock.svg");
-  background-size: 40%;
+  background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
-  position: absolute;
-  top: 25%;
-  left: 25%;
-  height: 50%;
-  width: 50%;
-  padding: 25px;
+  height: 100%;
+  width: 100%;
   border: 15px solid black;
   -webkit-box-shadow: 15px 15px 20px -7px rgba(0, 0, 0, 0.75);
+}
+.fondo-reloj{
+  background: white;
+  width: 55%;
+  height:60vh;
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  height: 50%;
+  width: 20%;
 }
 .clock-container {
   width: 50%;
@@ -36,7 +47,7 @@
   left: 50%;
   background: black;
   height: 100%;
-  width: 30%;
+  width: 60%;
   margin-top: -4px;
   border-bottom-right-radius: 50%;
   border-top-right-radius: 50%;
@@ -47,7 +58,7 @@
   left: 50%;
   background: black;
   height: 100%;
-  width: 22%;
+  width: 50%;
   margin-top: -4px;
   border-bottom-right-radius: 50%;
   border-top-right-radius: 50%;
@@ -58,7 +69,7 @@
   left: 50%;
   background: black;
   height: 100%;
-  width: 15%;
+  width: 40%;
   margin-top: -4px;
   border-bottom-right-radius: 50%;
   border-top-right-radius: 50%;
